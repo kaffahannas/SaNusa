@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <title></title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            background: #f3f3f3;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .menu{
+            padding: 0px 10px 0px 10px;  
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+            grid-gap:20px 40px;
+        }
+        .heading{
+            background-color: #e84343;
+            color: #fff;
+            margin-bottom: 30px;
+            margin-top: 0px;
+            padding: 0 0;
+            grid-column: 1/-1;
+            text-align: center;
+        }
+
+        .heading>h1{
+            font-weight: 400;
+            font-size: 32px;
+            letter-spacing: 10px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .heading>h3{
+            font-weight: 600;
+            font-size: 27px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        .food-items{
+            display: grid;
+            position: relative;
+            grid-template-rows: auto 1fr;
+            border-radius: 15px;
+            transition: .2s ease-in-out;
+        }
+        .food-items:hover{
+            box-shadow: 0 0 20px  rgba(0,0,0,0.60);
+        }
+        .food-items img{
+            position: relative;
+            width: 100%;
+            height: 280px;
+            border-radius: 15px 15px 0 0;
+            cursor: pointer;
+        }
+
+        h1{
+            grid-column: 1/-1;
+            text-align: center;
+        }
+
+        .details{
+            padding: 20px 10px;
+            display: grid;
+            grid-template-rows: auto 1fr 50px;
+            grid-row-gap: 15px;
+        }
+
+        .details-sub{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .details-sub>h5{
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .price{
+            text-align: right;
+        }
+
+        .details>p{
+            color: #6f6f6f;
+            font-size: 15px;
+            line-height: 28px;
+            font-weight: 400;
+            align-self: stretch;
+        }
+        .details>button{
+            background: #e84343;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 5px;
+            width: 180px;
+            cursor: pointer;
+
+        }
+
+        .details>button:hover{
+            background: #fc0101;
+        }
+
+        .sub-header{
+            height: 50vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/Foto/philosophy\ background.avif);
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <section class="sub-header">
+        <img src="/Foto/logo1.png" width="300px" height="200px">
+        <div class="heading">
+            <h3>&mdash;Menu&mdash;</h3>
+        </div>
+    </section>
+    
+
+    <div class="menu">
+        <div class="food-items">
+            <img src="/Foto/Ayam Betutu.jpg" alt="Ayam Betutu">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Ayam Betutu</h5>
+                    <h5 class="price">Rp.35.000.00</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Order</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Foto/Kepiting soka.jpg" alt="kepiting soka">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Kepiting soka</h5>
+                    <h5 class="price">Rp.40.000.00</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Order</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Foto/Rendang.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Rendang</h5>
+                    <h5 class="price">Rp.40.000.00</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Order</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Foto/Papeda.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Papeda</h5>
+                    <h5 class="price">Rp.35.000.00</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Order</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Foto/Kerak Telor.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Kerak Telor</h5>
+                    <h5 class="price">Rp.30.000.00</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Order</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Foto/supikanjp.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Sup Ikan Jantung Pisang</h5>
+                    <h5 class="price">Rp.35.000.00</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Order</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Foto/Es Kelapa.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Es Degan</h5>
+                    <h5 class="price">Rp.10.000.00</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Order</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Foto/Es Nona.JPG">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Es Nona</h5>
+                    <h5 class="price">Rp.20.000.00</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Order</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Foto/Es Goyobod.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Es Goyobod</h5>
+                    <h5 class="price">Rp.25.000.00</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Order</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Foto/Es Pisang Ijo.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Es Pisang Ijo</h5>
+                    <h5 class="price">Rp.20.000.00</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Order</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Foto/Klepon.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Klepon</h5>
+                    <h5 class="price">Rp.20.000.00</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Order</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Foto/Kolak.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Kolak</h5>
+                    <h5 class="price">Rp.15.000.00</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Order</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Foto/Pisang Goreng.JPG">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Pisang Goreng</h5>
+                    <h5 class="price">Rp.10.000.00</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Order</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Foto/Kue Bingka.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Kue Bingka</h5>
+                    <h5 class="price">Rp.20.000.00</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Order</button>
+            </div>
+        </div>
+
+        <div class="food-items">
+            <img src="/Foto/Serabi.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Serabi</h5>
+                    <h5 class="price">Rp.10.000.00</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button>Order</button>
+            </div>
+        </div>
+    
+    
+        <div class="food-items">
+            <img src="/Foto/Bajigur.jpg" alt="Ayam Betutu">
+         <div class="details">
+            <div class="details-sub">
+                <h5>Bajigur</h5>
+                <h5 class="price">Rp.35.000.00</h5>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button>Order</button>
+        </div>
+    </div>
+
+    <div class="food-items">
+        <img src="/Foto/Es Laksamana Mengamuk.jpg" alt="kepiting soka">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Es Laksamana</h5>
+                <h5 class="price">Rp.40.000.00</h5>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button>Order</button>
+        </div>
+    </div>
+    <div class="food-items">
+        <img src="/Foto/Lemper.jpg" alt="kepiting soka">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Lemper</h5>
+                <h5 class="price">Rp.40.000.00</h5>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button>Order</button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+.div{
+    padding-top: 5px;
+    margin:auto;
+    background-color: white;
+    width: 35%;
+    height: auto;
+    position:relative;
+}
+.tab {
+    text-indent: 50px;
+}
+#font1{
+    text-transform: capitalize;
+    font-family: Verdana;
+    font-size: large;
+    color: brown;
+}
+.left-form{
+    margin-left: 20px;
+    text-align: left;
+    justify-content: left;
+    position: relative;
+}
+textarea{
+    resize: none;
+    width: 170px;
+    position: relative;
+}
+form{
+    position: relative;
+    margin-left: 3px;
+}
+.form-order{
+    margin-left: 30px;
+}
+.p-order1{
+    margin left: 2px;
+}
+#order{
+    display: flex;
+    margin-left: 3px;
+    margin-bottom: 3px;
+}
+.maps{
+    margin: 0;
+    padding: 0;
+    justify-content: left;
+}
+.button{
+    background-color: brown;
+  color: white;
+  padding: 12px;
+  margin: auto;
+  margin-top: 5px;
+  border: none;
+  width: 35%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  position: relative;
+  display: block;
+}
+.order-img{
+    width: 120px;
+    height: 90px;
+    margin-bottom: 3px;
+    margin-left: 15px;
+}
+.h1{
+    font-size: medium;
+    margin-left: 15px;
+}
+.p{
+    font-size: small;
+    margin-left: 15px;
+}
+span.price {
+    float: right;
+    color: grey;
+}
+.container {
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+}
+.button:active {
+    transform: translateY(4px);
+}
